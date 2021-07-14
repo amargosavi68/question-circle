@@ -1,0 +1,33 @@
+.first-card mat-card {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+.first-card mat-card div {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+}
+
+.first-card img {
+     height: 300px;
+     width: 400px;
+     margin: 0px 20px;
+}
+
+.first-card  mat-card-content {
+     margin: 20px 30px;
+     width: 300px;
+     text-align: justify;
+     font-size: 18px;
+}
+
+.developer-info {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+}
