@@ -1,1 +1,28 @@
-<p>navigation works!</p>
+<mat-selection-list [multiple]="false">
+     <mat-list-option>
+          <a mat-list-item routerLink="/home"><mat-icon>home</mat-icon> Home</a>
+     </mat-list-option>
+     <div *ngIf="!user">
+          <mat-list-option>
+               <a mat-list-item routerLink="/login"><mat-icon>login</mat-icon> Login</a>
+               
+          </mat-list-option>
+          <mat-list-option>
+               <a mat-list-item routerLink="/register"><mat-icon>app_registration</mat-icon> Register</a>
+          </mat-list-option>
+     </div>
+     <div *ngIf="user">
+          <mat-list-option>
+               <a mat-list-item routerLink="/dashboard"><mat-icon>dashboard</mat-icon> Dashboard</a>
+          </mat-list-option>
+          <mat-list-option>
+               <a mat-list-item routerLink="/add_question"><mat-icon>add</mat-icon> New Question</a>
+          </mat-list-option>
+          <mat-list-option>
+               <a mat-list-item routerLink="/login"><mat-icon>person</mat-icon> Profile</a>
+          </mat-list-option>
+          <mat-list-option>
+               <a mat-list-item routerLink="/home"><mat-icon>logout</mat-icon> Logout</a>
+          </mat-list-option>
+     </div>
+</mat-selection-list>
