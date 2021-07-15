@@ -1,3 +1,7 @@
 mat-sidenav-content {
      min-height: 90vh;
+     background-image: url('https://daveceddia.com/images/yellow-bokeh-background.jpg');
+     background-size: cover;
+     background-attachment: fixed;
+     scroll-behavior: smooth;
 }

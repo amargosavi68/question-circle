@@ -1,8 +1,9 @@
 <mat-selection-list [multiple]="false">
-     <mat-list-option>
-          <a mat-list-item routerLink="/home"><mat-icon>home</mat-icon> Home</a>
-     </mat-list-option>
      <div *ngIf="!user">
+          <mat-list-option>
+               <a mat-list-item routerLink="/home"><mat-icon>home</mat-icon> Home</a>
+          </mat-list-option>
+          
           <mat-list-option>
                <a mat-list-item routerLink="/login"><mat-icon>login</mat-icon> Login</a>
                

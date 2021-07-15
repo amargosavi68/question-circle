@@ -1,0 +1,25 @@
+.avatar-image {
+     background-image: url('https://www.shareicon.net/data/512x512/2016/09/01/822711_user_512x512.png');
+     background-size: cover;
+}
+
+.question-heading mat-card {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.question-heading mat-card mat-card-title{
+     font-size: xx-large;
+     font-weight: 700;
+}
+
+ mat-card {
+     margin: 0.5% 15%;
+}
+
+mat-card-actions {
+     display: flex;
+     flex-direction: row-reverse;
+     margin: 1% 5%;
+}
