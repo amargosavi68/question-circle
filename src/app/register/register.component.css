@@ -1,0 +1,44 @@
+.login-section {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap-reverse;
+     justify-content: center;
+     align-items: center;
+     min-height: 90vh;
+}
+
+mat-card {
+     width: 400px;
+     height: 550px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     box-shadow: 2px 2px 10px 3px #aaa;
+}
+
+mat-card-title {
+     margin: 10px;
+     font-size: 20px;
+     font-weight: 800;
+}
+
+mat-card-content form {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+mat-card-content form mat-form-field, mat-checkbox, button {
+     width: 300px;
+     margin: 5px 0px;
+}
+
+img {
+     width: 300px;
+}
+
+a {
+     color: tomato;
+}

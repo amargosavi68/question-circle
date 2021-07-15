@@ -8,9 +8,9 @@ import { FormGroup, FormBuilder, Validators } from "@angular/forms";
 })
 export class LoginComponent implements OnInit {
 
-  loginForm = this.fb.group({
-    username: '',
-    password: '',
+  loginForm: FormGroup = this.fb.group({
+    username: ['', Validators.required, Validators.email],
+    password: ['', Validators.required],
     remember: false,
     admin: false
   })
