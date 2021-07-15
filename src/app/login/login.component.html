@@ -1,1 +1,32 @@
-<p>login works!</p>
+<div class="login-section">
+     <mat-card>
+          <img src="../../assets//images/undraw_secure_login_pdn4.svg" alt="login-image">
+     </mat-card>
+     <mat-card>
+          <mat-card-header>
+               <mat-card-title>Login Here</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+               
+               <form novalidate [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                    <p>{{ loginForm.value | json }}</p>
+
+                    <mat-form-field>
+                         <input matInput type="text" name="username" id="username" placeholder="Enter username" autocomplete="off" formControlName="username">
+                    </mat-form-field>
+
+                    <mat-form-field>
+                         <input matInput type="password" name="password" id="password" placeholder="Enter password" autocomplete="off" formControlName="password">
+                    </mat-form-field>
+
+                    <mat-checkbox formControlName="remember">Remember Me</mat-checkbox>
+                    
+                    <button mat-button color="warn">Login</button>
+               </form>
+          </mat-card-content>
+          <mat-card-actions>
+               <p>Don't have an account? <a routerLink="/register">Register Here</a></p>
+          </mat-card-actions>
+          
+     </mat-card>
+</div>

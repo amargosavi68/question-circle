@@ -11,6 +11,9 @@ import { MatCardModule } from "@angular/material/card";
 import { MatInputModule } from "@angular/material/input";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatListModule } from "@angular/material/list";
+import { MatCheckboxModule } from "@angular/material/checkbox";
+
+import { ReactiveFormsModule } from "@angular/forms";
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -42,8 +45,10 @@ import { HomeComponent } from './home/home.component';
     MatButtonModule,
     MatCardModule,
     MatInputModule,
+    MatCheckboxModule,
     MatSidenavModule,
     MatListModule,
+    ReactiveFormsModule,
     AppRoutingModule
   ],
   providers: [],
