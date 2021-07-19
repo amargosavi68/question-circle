@@ -12,7 +12,11 @@ export class NavigationComponent implements OnInit {
   user: User = {
     id: 1,
     name: "Amar Gosavi",
-    email: "abc@email.com"
+    email: "abc@email.com",
+    password: "",
+    remember: false,
+    admin: false,
+    image: "",
   }
 
   constructor() { }
