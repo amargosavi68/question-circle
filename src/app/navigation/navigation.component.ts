@@ -16,7 +16,9 @@ export class NavigationComponent implements OnInit {
     password: "",
     remember: false,
     admin: false,
+    contact: "",
     image: "",
+    designation: ""
   }
 
   constructor() { }

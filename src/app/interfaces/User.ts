@@ -5,5 +5,7 @@ export interface User {
      password: String,
      remember: Boolean,
      admin: Boolean,
-     image: String
+     contact: "",
+     image: String,
+     designation: ""
 }

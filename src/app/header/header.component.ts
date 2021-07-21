@@ -12,13 +12,15 @@ export class HeaderComponent implements OnInit {
   @Input() 'sidenav': MatSidenav;
 
   user: User = {
-    id: 1,
-    name: "Amar Gosavi",
-    email: "abc@email.com",
+    id: 0,
+    name: "",
+    email: "",
     password: "",
     remember: false,
+    contact: "",
     admin: false,
     image: "",
+    designation: ""
   }
 
   constructor() { }
