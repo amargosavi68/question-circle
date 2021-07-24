@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import {MatSidenav} from "@angular/material/sidenav";
-import { User } from '../interfaces/User';
+import { Router } from '@angular/router';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -10,22 +11,20 @@ import { User } from '../interfaces/User';
 export class HeaderComponent implements OnInit {
 
   @Input() 'sidenav': MatSidenav;
+  
+  isAuthenticated: Boolean = true;
 
-  user: User = {
-    id: 0,
-    name: "",
-    email: "",
-    password: "",
-    remember: false,
-    contact: "",
-    admin: false,
-    image: "",
-    designation: ""
-  }
-
-  constructor() { }
+  constructor(private authService: AuthService, public router: Router) { }
 
   ngOnInit(): void {
+    this.authService.isAuthenticated()
+    .subscribe((value) => {
+      this.isAuthenticated = value;
+    });
+  }
+
+  logout() {
+
   }
 
 }

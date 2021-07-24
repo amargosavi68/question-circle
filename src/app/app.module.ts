@@ -28,6 +28,7 @@ import { HomeComponent } from './home/home.component';
 
 import { UserService } from './services/user.service';
 import { QuestionService } from './services/question.service';
+import { AuthService } from './services/auth.service';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { QuestionService } from './services/question.service';
   ],
   providers: [
     UserService,
-    QuestionService
+    QuestionService,
+    AuthService
   ],
   bootstrap: [AppComponent]
 })
